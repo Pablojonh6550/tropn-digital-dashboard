@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-container label {
+  color: #cc6237;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.input-container input {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
+  color: #657593;
+  background-color: #f6f6f6;
+  height: 20px;
+}
