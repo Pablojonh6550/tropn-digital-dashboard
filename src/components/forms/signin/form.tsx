@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.scss";
 
 import Input from "@/components/input/input";
 import Button from "@/components/button/button";
