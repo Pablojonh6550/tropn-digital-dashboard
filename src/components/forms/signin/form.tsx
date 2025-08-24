@@ -1,9 +1,15 @@
+'use client';
 import React from "react";
 
 import Input from "@/components/input/input";
 import Button from "@/components/button/button";
 
 const SignInForm = () => {
+
+    const changeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+        console.log(e.target.value);
+    }
+
     return (
         <section className="wrapper">
             <div className="login-container">
@@ -15,9 +21,10 @@ const SignInForm = () => {
                             <span className="sub-title">Entre com sua conta para acessar o painel.</span>
                         </div>
                         <div className="form">
-                            <Input />
-                            <Input />
-                            <Button>Enviar</Button>
+                            <Input label="Email" placeholder="Digite aqui" type="email" onChange={changeInput} />
+                            <Input label="Senha" placeholder="Digite aqui" type="password" onChange={changeInput} />
+
+                            <Button label="Entrar" type="submit" />
                         </div>
                     </div>
                 </div>
